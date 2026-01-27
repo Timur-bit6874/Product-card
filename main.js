@@ -40,9 +40,31 @@ const outConsoleLogButton = document.querySelector('#output-console-log');
 
 //outConsoleLogButton.addEventListener('click', outconsolelog)
 
-outConsoleLogButton.addEventListener('click', outconsolelog('ДЗ №4'))
- 
-function outconsolelog(message)  {
+outConsoleLogButton.addEventListener('click', outConsoleLog('ДЗ №4'))
+
+function outConsoleLog(message) {
   alert(message);
   console.log(message);
 }
+
+// Выводить контент заголовка h1 при наведении
+
+const sectionTitle = document.querySelector('.section-products__title');
+
+sectionTitle.addEventListener('mouseenter', function() {
+  console.log(this.textContent);
+});
+
+//Добавляем кнопку изменения цвета с одной на другую
+
+const colorSwitchingButton = document.querySelector('.color-switching');
+
+colorSwitchingButton.addEventListener('click', () => {
+  if (colorSwitchingButton.classList.contains('active')) {
+    colorSwitchingButton.classList.remove('active');
+    colorSwitchingButton.classList.add('inactive');
+  } else {
+    colorSwitchingButton.classList.remove('inactive');
+    colorSwitchingButton.classList.add('active');
+  }
+})

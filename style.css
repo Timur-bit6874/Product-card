@@ -75,7 +75,7 @@
   align-items: center;
   padding-block: 220px 116px;
   padding-inline: 85px;
-  background-image: url(/photo/section-product-bg-image.png);
+  background-image: url("/image/section-product-bg-image.png");
   background-size: 790px 697px;
   background-repeat: no-repeat;
   background-position-y:top;
@@ -99,4 +99,12 @@
   flex-wrap: wrap;
   gap: 45px;
   justify-content: center;
+}
+
+.active {
+  background-color: yellow;
+}
+
+.inactive {
+  background-color: pink;
 }

@@ -36,13 +36,13 @@ function openGoogle() {
 
 //Вывод консоль лог
 
-const outConsoleLogButton = document.querySelector('#output-console-log');
+const outputConsoleLogButton = document.querySelector('#output-console-log');
 
-//outConsoleLogButton.addEventListener('click', outconsolelog)
+//outputConsoleLogButton.addEventListener('click', outputconsolelog)
 
-outConsoleLogButton.addEventListener('click', outConsoleLog('ДЗ №4'))
+outputConsoleLogButton.addEventListener('click', outputConsoleLog('ДЗ №4'))
 
-function outConsoleLog(message) {
+function outputConsoleLog(message) {
   alert(message);
   console.log(message);
 }

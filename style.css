@@ -101,10 +101,10 @@
   justify-content: center;
 }
 
-.active {
+.bg-active {
   background-color: yellow;
 }
 
-.inactive {
+.bg-inactive {
   background-color: pink;
 }

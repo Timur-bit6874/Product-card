@@ -57,14 +57,13 @@ sectionTitle.addEventListener('mouseenter', function() {
 
 //Добавляем кнопку изменения цвета с одной на другую
 
-const colorSwitchingButton = document.querySelector('.color-switching');
+const colorSwitchingButton = document.querySelector('#color-switching');
 
 colorSwitchingButton.addEventListener('click', () => {
-  if (colorSwitchingButton.classList.contains('active')) {
-    colorSwitchingButton.classList.remove('active');
-    colorSwitchingButton.classList.add('inactive');
-  } else {
-    colorSwitchingButton.classList.remove('inactive');
-    colorSwitchingButton.classList.add('active');
-  }
+  colorSwitchingButton.classList.toggle("bg-inactive", !colorSwitchingButton.classList.toggle("bg-active"))
 })
+  
+  
+  
+ 
+  

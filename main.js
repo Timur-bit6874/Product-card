@@ -38,8 +38,6 @@ function openGoogle() {
 
 const outputConsoleLogButton = document.querySelector('#output-console-log');
 
-//outputConsoleLogButton.addEventListener('click', outputconsolelog)
-
 outputConsoleLogButton.addEventListener('click', outputConsoleLog('ДЗ №4'))
 
 function outputConsoleLog(message) {
@@ -59,11 +57,6 @@ sectionTitle.addEventListener('mouseenter', function() {
 
 const colorSwitchingButton = document.querySelector('#color-switching');
 
-colorSwitchingButton.addEventListener('click', () => {
-  colorSwitchingButton.classList.toggle("bg-inactive", !colorSwitchingButton.classList.toggle("bg-active"))
-})
-  
-  
-  
- 
-  
+colorSwitchingButton.addEventListener('click', function() {
+  colorSwitchingButton.classList.toggle("active");
+});

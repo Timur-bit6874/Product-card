@@ -101,10 +101,10 @@
   justify-content: center;
 }
 
-.bg-active {
+#color-switching {
   background-color: yellow;
 }
 
-.bg-inactive {
-  background-color: pink;
+#color-switching.active {
+  background-color: rgb(4, 0, 255);
 }

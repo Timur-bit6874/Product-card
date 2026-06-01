@@ -19,6 +19,7 @@ const lightSpeed = 299792458
 
 
 
+
 let product = "Мышь";
 let price = 500;
 

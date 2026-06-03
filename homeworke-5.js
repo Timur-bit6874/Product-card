@@ -7,15 +7,21 @@ sendCityTemp('Москва', 20)
 
 
 
-const lightSpeed = 299792458
- if  (lightSpeed > 300000000) {
-  console.log('Сверхсветовая скорость')
- } else if (lightSpeed === 299792458) {
-  console.log('Скорость света') 
-} 
- else {
-  console.log('Субсветовая  скорость')
+
+const LIGHT_SPEED = 299792458;
+
+function checkSpeed(speed) {
+  
+  if (speed > LIGHT_SPEED) {
+    console.log("Сверхсветовая скорость");
+  } else if (speed < LIGHT_SPEED) {
+    console.log("Субсветовая скорость");
+  } else {
+    console.log("Скорость света");
+  }
 }
+
+checkSpeed(500000000); 
 
 
 
@@ -26,7 +32,8 @@ let price = 500;
 function buyProduct(budget) {
   if (budget >= price) {
     console.log(`${product} приобретён. Спасибо за покупку!`);
-  } else {    let difference = price - budget;
+  } else {   
+     let difference = price - budget;
     console.log(`Вам не хватает ${difference}₽, пополните баланс.`);
   }
   

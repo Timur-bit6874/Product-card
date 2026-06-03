@@ -8,6 +8,7 @@ sendCityTemp('Москва', 20)
 
 
 
+
 const LIGHT_SPEED = 299792458;
 
 function checkSpeed(speed) {

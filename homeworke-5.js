@@ -26,6 +26,7 @@ checkSpeed(500000000);
 
 
 
+
 let product = "Мышь";
 let price = 500;
 
